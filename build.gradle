@@ -1,0 +1,47 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+Properties properties = new Properties()
+File projectPropertiesFile = project.file("codeup_project.properties")
+if (projectPropertiesFile.exists()) {
+	properties.load(projectPropertiesFile.newDataInputStream())
+}
+def NEXUS_VERSION = properties.getProperty("NEXUS_VERSION")
+
+group = 'com.ts'
+version = NEXUS_VERSION
+sourceCompatibility = '1.8'
+
+jar.enabled = true
+
+jar {
+	from(sourceSets.main.allJava)
+}
+
+repositories {
+	maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// HTTP相关
+	compile "javax.servlet:javax.servlet-api"
+	// POI操作Office
+	compile "org.apache.poi:poi:3.17"
+	compile "org.apache.poi:poi-ooxml:3.17"
+	compile "org.apache.poi:poi-ooxml-schemas:3.17"
+	compile "xerces:xercesImpl:2.9.1"
+	// apache-commons工具包
+	compile "org.apache.commons:commons-lang3"
+}
+
+test {
+	useJUnitPlatform()
+}
+
+// publish
+apply from: "codeup_publish.gradle"
