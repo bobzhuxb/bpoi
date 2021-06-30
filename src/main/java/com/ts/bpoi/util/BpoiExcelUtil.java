@@ -474,7 +474,7 @@ public class BpoiExcelUtil {
             String cellValue = headValueMap.get(col);
             if (cellValue == null || !cellValue.trim().equals(excelPropertyDataMap.get(col + 1).getValue())) {
                 return new BpoiReturnCommonDTO<>(BpoiConstants.commonReturnStatus.FAIL.getValue(), "【"
-                        + BpoiExcelUtil.getColumnCorrespondingLabel(col) + "1】的列名不正确，请参照模板修改（注意列顺序不能错乱）");
+                        + BpoiExcelUtil.getColumnCorrespondingLabel(col + 1) + "1】的列名不正确，请参照模板修改（注意列顺序不能错乱）");
             }
         }
         // 设置返回数据
@@ -738,19 +738,6 @@ public class BpoiExcelUtil {
         }
 
         return sb.reverse().toString();
-    }
-
-    /**
-     * 列号转字母
-     *
-     * @param columnIndex
-     *            poi里xls的列号（从0开始）
-     * @throws IllegalArgumentException
-     *             if columnIndex less than 0
-     * @return 该列对应的字母
-     */
-    public static String getColumnIndexLabel(int columnIndex) {
-        return getColumnCorrespondingLabel(columnIndex + 1);
     }
     // =============== Excel列号转字母 end ==============================
 
