@@ -279,7 +279,7 @@ public class BpoiExcelUtil {
         // 计算并比较在实际数据行的最大列号（从1开始计）
         List<ExcelTitleDTO> titleList = excelExportDTO.getTitleList();
         if (titleList != null && titleList.size() > 0) {
-            int maxTitleColumn = titleList.get(titleList.size() - 1).getColIndex();
+            int maxTitleColumn = titleList.get(titleList.size() - 1).getColIndex() + 1;
             if (maxTitleColumn > maxColumn) {
                 maxColumn = maxTitleColumn;
             }
