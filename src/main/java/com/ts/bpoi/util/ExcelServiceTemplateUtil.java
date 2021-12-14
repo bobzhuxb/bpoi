@@ -275,6 +275,7 @@ public class ExcelServiceTemplateUtil {
                 } else {
                     // 根据数据类型的字段注解@ExcelProperty反推titleList
                     titleList = BpoiExcelUtil.getTitleListFromObj(dataObj0.getClass());
+                    excelExportDTO.setTitleList(titleList);
                 }
             }
         }
