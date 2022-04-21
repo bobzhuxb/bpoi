@@ -116,8 +116,8 @@
     
     
 #### 更多请参考
-1. 快速开始（https://zhubob.yuque.com/docs/share/87fb569e-802c-49a6-93db-6cdc15becbef?# 《快速开始》）
-2. 接口API（https://zhubob.yuque.com/docs/share/b8d42e61-8ba7-42f7-9b24-7c3403cf6f4f?# 《接口API》）
-3. Excel导出参数说明（https://zhubob.yuque.com/docs/share/ec5da8cb-ec62-479c-8a7e-aeabf05c5cab?# 《Excel导出参数说明》）
-4. Excel导入说明（https://zhubob.yuque.com/docs/share/7e4f38d8-f7c7-48ed-8543-ac033d8f688c?# 《Excel导入说明》）
-5. 其他说明（https://zhubob.yuque.com/docs/share/7f216585-6cff-4794-96ec-a4795ab0aae8?# 《其他说明》）
+1. 快速开始（https://zhubob.yuque.com/docs/share/87fb569e-802c-49a6-93db-6cdc15becbef?# 《快速开始》密码：csr8）
+2. 接口API（https://zhubob.yuque.com/docs/share/b8d42e61-8ba7-42f7-9b24-7c3403cf6f4f?# 《接口API》密码：vipn）
+3. Excel导出参数说明（https://zhubob.yuque.com/docs/share/ec5da8cb-ec62-479c-8a7e-aeabf05c5cab?# 《Excel导出参数说明》密码：ox4n）
+4. Excel导入说明（https://zhubob.yuque.com/docs/share/7e4f38d8-f7c7-48ed-8543-ac033d8f688c?# 《Excel导入说明》密码：hx2x）
+5. 其他说明（https://zhubob.yuque.com/docs/share/7f216585-6cff-4794-96ec-a4795ab0aae8?# 《其他说明》密码：nng4）
